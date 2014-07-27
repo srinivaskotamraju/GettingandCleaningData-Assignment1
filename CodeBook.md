@@ -2,12 +2,13 @@ Study Design
 1) The data was downloaded from http://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 2) The data/zip file is extracted into a folder titled "UCI HAR Dataset"
 3) The above two steps are executed as part of the script (one time).
+4) The downloaded files are read, the blank space (any space in starting of the line or in between) is replaced by one blank.
 
 1) Data from training, subject are both joined (before any processing). Activity and subjected related information are binded together (column and row bind), in the same order
 as training and subject.
 2) Columns are filtered according to our needs (a grep pattern is used to pick either [Mm]ean, [Ss]td, mean and standard deviation)
 3) Then aggregrate are calculated for each of the subject and activity.
-4) On the way, the activities are provided proper labels (instead of numbers).
+4) The activities are provided proper labels (instead of numbers).
 5) Descriptive variable names are provided for better understanding.
 
 Code Book
